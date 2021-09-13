@@ -19,7 +19,7 @@ public class DbApiApplication {
 	CommandLineRunner runner (PlaceRepository repository){
 		return args -> {
 			if(repository.findAll().isEmpty()){
-				repository.save(new PlaceDescription("UIC", "A sad sad place"));
+				repository.save(new PlaceDescription("UIC", "A happy place"));
 				System.out.println("Added.");
 			}
 		};
